@@ -17,7 +17,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
       - name: Printing Labels
-      - run: echo ${{github.event.label}}
+        run: echo ${{github.event.label}}
       
   add-comment:
 #     if: github.event.label.name == 'help-wanted' || github.event.label.name == 'bug'
