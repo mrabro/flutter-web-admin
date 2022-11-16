@@ -14,6 +14,7 @@ on:
       - labeled
 jobs:
   add-comment:
+    if: github.event.label.name == 'help-wanted' || github.event.label.name == 'bug'
     runs-on: ubuntu-latest
     permissions:
       issues: write
